@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".slide");if(!e.length){console.error("No slides found!");return}let t=0;function n(t){e.forEach((e,n)=>{e.classList.toggle("active",n===t)})}n(0),document.querySelector(".next").addEventListener("click",function(){n(t=(t+1)%e.length)}),document.querySelector(".prev").addEventListener("click",function(){n(t=(t-1+e.length)%e.length)})});
+//# sourceMappingURL=index.6fc81567.js.map
